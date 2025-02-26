@@ -7,11 +7,11 @@ import HeroProduct from "@/components/HeroProduct/HeroProduct";
 import FeaturesSection from "@/components/sections/FeaturesSection/FeaturesSection";
 import MoreSection from "@/components/sections/MoreSection/MoreSection";
 
-const IGPlusPage = () => {
-  const PRODUCT_KEY:string = "MEMENTO";
+const ChesshelperPage = () => {
+  const PRODUCT_KEY:string = "CHESSHELPER";
 
   return (
-    <div>
+    <div className="schema-purple">
       <HeroProduct productAlias={PRODUCT_KEY}/>
       <main>
         <FeaturesSection productAlias={PRODUCT_KEY}/>
@@ -24,4 +24,4 @@ const IGPlusPage = () => {
   );
 };
 
-export default IGPlusPage;
+export default ChesshelperPage;

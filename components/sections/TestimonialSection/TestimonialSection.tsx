@@ -11,7 +11,7 @@ export interface TestimonialBlock {
   desc: string
 }
 
-const TestimonialSection:React.FC<{productAlias: Product["alias"]}> = ({productAlias}) => {
+const TestimonialSection:React.FC<{productAlias: Product["alias"], isMainPage: boolean}> = ({productAlias, isMainPage}) => {
   const ITEM = products.find((p) => p.alias === productAlias);
   const TESTIMONIALS = ITEM?.details.preview_reviews;
 
@@ -43,8 +43,8 @@ const TestimonialSection:React.FC<{productAlias: Product["alias"]}> = ({productA
   return (
     <section className="content_wrapper">
       <SectionHeader
-        title="What Our Users Say"
-        desc="Our projects receive over 150 reviews every month, with more than 4,000 reviews in total"
+        title={isMainPage ? "What Our Users Say" : "What users say about " + ITEM.title.split(" ")[0]}
+        desc={isMainPage ? "Our projects receive over 150 reviews every month, with more than 4,000 reviews in total" : "Serving over 50 reviews  every month, over than 1000 reviews in total"}
         dashTitle="testimonial"
         parentClassName={style.header_gap}
       />

@@ -31,7 +31,7 @@ const FeaturesSection: React.FC<{ productAlias: Product["alias"] }> = ({
           <Block
             key={post.title}
             title={post.title}
-            iconUrl={post.iconUrl}
+            icon={post.icon}
             description={post.description}
           />
         ))}

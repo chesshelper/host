@@ -11,7 +11,7 @@ const IGPlusPage = () => {
   const PRODUCT_KEY:string = "SPOPLUS";
 
   return (
-    <div className="schema-green">
+    <div>
       <HeroProduct productAlias={PRODUCT_KEY}/>
       <main>
         <FeaturesSection productAlias={PRODUCT_KEY}/>

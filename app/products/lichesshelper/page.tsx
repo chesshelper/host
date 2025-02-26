@@ -8,7 +8,7 @@ import FeaturesSection from "@/components/sections/FeaturesSection/FeaturesSecti
 import MoreSection from "@/components/sections/MoreSection/MoreSection";
 
 const IGPlusPage = () => {
-  const PRODUCT_KEY:string = "MEMENTO";
+  const PRODUCT_KEY:string = "LICHESSHELPER";
 
   return (
     <div>

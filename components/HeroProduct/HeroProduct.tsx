@@ -55,7 +55,9 @@ const formattedTestimonial = ITEM?.details?.stats
         </div>
         
         <div className={style.content_group2}>
-          {!ITEM?.details.slides_count || ITEM?.details.slides_count === 0 ? "" : <EmblaCarousel slides={SLIDES} options={OPTIONS} />}
+          {!ITEM?.details.slides_count || ITEM?.details.slides_count === 0 
+          ? "" 
+          : <EmblaCarousel slides={SLIDES} options={OPTIONS} isVertical={ITEM.productType === "APPLICATION"} />}
         </div>
 
       </div>

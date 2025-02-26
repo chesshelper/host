@@ -25,7 +25,7 @@ const MoreSection:React.FC<{ excludeAlias: string }> = ({excludeAlias}) => {
       <SectionHeader
         title="Other Extensions"
         desc="Maximize your productivity and streamline your web usage"
-        dashTitle="even more"
+        dashTitle="explore"
         parentClassName={style.header_gap}
       />
       <div className={style.content}>

@@ -157,7 +157,7 @@
     align-items: center;
     justify-content: space-between;
     min-height: 48px;
-    background-color: #404867;
+    background-color: #32384f;
     padding: 0 1.2rem;
     border-radius: 20px;
     margin-bottom: 4px;
@@ -166,12 +166,12 @@
 
 .modal_item__selected:hover,
 .modal_item__selected {
-    background-color: #4e577b;
+    background-color: #3d4460;
 }
 
 
 .modal_item .checkbox {
-    color: #2f354f;
+    color: #7a819f;
 }
 
 .modal_item__selected .checkbox {
@@ -241,7 +241,7 @@
     font-weight: 600;
     padding: 0.8em 1.8em;
     border-radius: 30px;
-    background-color: #383b54;
+    background-color: #33394f;
     margin-bottom: 0.1em;
     margin-left: 0.6rem;
     border: none;

@@ -9,14 +9,16 @@ import {
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
 import "./embla.css"
+import clsx from 'clsx'
 
 type PropType = {
   slides: string[]
   options?: EmblaOptionsType
+  isVertical: boolean
 }
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
-  const { slides, options } = props
+  const { slides, options, isVertical } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
     Autoplay({ playOnInit: true, delay: 3500, stopOnMouseEnter: false })
   ])
@@ -34,12 +36,12 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   
 
   return (
-    <div className="embla">
+    <div className={clsx("embla", isVertical && "embla__vertical")}>
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((slide) => (
             <div className="embla__slide" key={slide}>
-              <div className="embla__slide__image">
+              <div className={clsx("embla__slide__image", isVertical && "embla__slide__image__vertical")}>
                 <img src={slide}/>
               </div>
             </div>
