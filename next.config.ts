@@ -100,6 +100,11 @@ const nextConfig: NextConfig = {
         destination: "/products/memento/",
         permanent: true,
       },
+      {
+        source: "/dohabit",
+        destination: "/products/dohabit/",
+        permanent: true,
+      },
 
       // LANGUAGE RELATED PATHS - DOWN BELOW
 
